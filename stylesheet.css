@@ -1,0 +1,324 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+  color: rgb(0, 0, 0);
+  font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+  background: rgb(255,255,255);
+  display: block;
+}
+header{
+  width:100%;
+  text-align: center;
+  height: 60px;
+  position: fixed;
+  background-color: white;
+  
+  
+}
+
+header img{
+  height:25px ;
+  width: 100px;
+  padding-top: 16px;
+  
+}
+header .fas{
+  float: right;
+  padding-top: 22px;
+  padding-right: 20px;
+ 
+}
+header .fas:active{
+ visibility: visible;
+}
+
+.header-nav{
+  background-color: white;
+  
+  text-align: left;
+  transform: translateY(-115%);
+  transition: 0.5s;
+  z-index: 10;
+}
+
+
+.header-menu li{
+  padding-bottom: 24px;
+  padding-top: 18px;
+  border-bottom: solid 1px #a0a0a0 ;
+  padding-left:10px ;
+
+}
+.header-menu li a{
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  font-size: 14px;
+}
+.header-menu li a:hover{
+  text-decoration: underline;
+}
+
+
+.header-menu .fas{
+  padding: 0 10px;
+
+}
+.header-icons img{
+  height: 20px;
+  width: 20px;
+  padding: 17px 12px 17px 12px;
+}
+.header-icons{
+  border-bottom: solid 1px #a0a0a0;
+}
+
+.header-cover{
+  width:100%;
+  text-align: center;
+  height: 60px;
+  position: fixed;
+  background-color: white;
+  z-index: 1000;
+}
+.drawer-btn:checked ~ .header-nav{
+  transform: translateY(10%);
+}
+
+.drawer-btn{
+  position: absolute;
+  right: 18px;
+  margin-top: 20px;
+  transform: scale(1.5) ;
+  opacity: 0;
+  z-index: 2000;
+}
+
+a {
+  text-decoration: none;
+  color:#000000;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+ 
+}
+.sidebar{
+  width: 20%;
+  position: fixed;
+  right:0;
+  height:100%;
+  
+}
+.side-logo{
+  width: 87px;
+  height: 22.42px;
+  width: auto !important;
+  max-height: 25px;
+  padding: 20px 0 40px 0;
+}
+.side-contents{
+  padding-left: 16%;
+}
+.side-menu li a{
+  font-size:14px;
+  cursur:pointer;
+  
+}
+.side-menu li a:hover{
+  text-decoration: underline;
+} 
+.side-menu li{
+  padding-bottom: 25px;
+}
+
+.side-icon .fab{
+padding:40px 10px 0px 0;
+font-size: 150%;
+}
+.side-icon .fab:hover{
+ opacity: 0.7;
+}
+.contents{
+ width: 80%;
+}
+.top-image img{
+  width: 100%;
+
+}
+.message-wrapper{
+  width:60% ;
+  margin: 0 auto;
+  text-align: center;
+}
+.photo-wrapper img{
+  width:33.33333%;
+
+  
+}
+img{
+ vertical-align: bottom ;
+}
+
+.message {
+  font-size: 22px;
+  padding-bottom: 20px;
+  padding-top: 70px;
+  margin-bottom: 57px;
+    border-bottom: 3px solid;
+  font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+  display: inline-block;
+  
+}
+.message-wrapper p{
+  
+  padding-bottom: 80px;
+  text-align: left;
+}
+.photo-wrapper{
+  width: 100%;
+}
+.big-photo img{
+  width: 100%;
+}
+.contents-item{
+
+ width:20%;
+ padding: 0 25px 0 25px;
+
+}
+.contents-item img{
+  height: 103px;
+  width: 103px;
+  padding-bottom: 10px;
+}
+.brand-wrapper{
+  width: 80%;
+  margin: 0 auto;
+  
+  text-align: center;
+  height: 470px;
+  border-bottom: solid 1px #a0a0a0 ;
+  
+}
+.brand-contents{
+  display: flex;
+}
+.contents-item p{
+  text-align: left;
+  margin-bottom: 47px;
+}
+.project-wrapper{
+ padding-top: 70px;
+ 
+ border-bottom: solid 1px #a0a0a0 ;
+ text-align: center;
+ width: 80%;
+ margin: 0 auto;
+}
+.project-item img{
+width: 375px;
+height: 225px;
+margin-bottom: 10px;
+padding-right: 15px;
+float: left;
+}
+
+.project-item p{
+  text-align: left;
+  margin-bottom:70px;
+ 
+}
+.company-wrapper{
+  text-align: center;
+ 
+  height:500px;
+  width: 80%;
+  margin: 0 auto;
+}
+.adress{
+  text-align: left;
+  padding-left: 1%;
+  margin-right: 5%;
+ 
+}
+.company-contents{
+  display: flex;
+  
+}
+.ggmap {
+ position: relative;
+
+ width: 100%;
+ padding-top: 75%;
+  
+  }
+.ggmap iframe{
+width: 100%;
+ left: 0;
+ top: 0;
+position: absolute;
+height: 40%;
+}
+
+ 
+
+
+footer p{
+  text-align: center;
+  padding-top: 150px;
+  
+  font-size: 12px;
+ width: 80%;
+}
+
+footer a{
+  color: #0066ff;
+    text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
